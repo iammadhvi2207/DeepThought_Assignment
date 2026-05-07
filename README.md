@@ -1,7 +1,7 @@
 <h1 align="center">🧠 Trinethra Module – Supervisor Feedback Analyzer</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI-Powered+Feedback+Analysis;Built+with+Next.js+and+LLMs;Transforming+Qualitative+Insights+into+Structured+Evaluation&center=true&width=700&height=45">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI-Powered+Feedback+Analysis;Built+with+Next.js+and+LLMs;TTransforming+Qualitative+Insights+into+Structured+Evaluation&center=true&width=700&height=45">
 </p>
 
 <p align="center">
