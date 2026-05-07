@@ -1,7 +1,27 @@
-# Trinethra Module - Supervisor Feedback Analyzer
-### DeepThought Software Developer Internship Assignment
+<h1 align="center">🧠 Trinethra Module – Supervisor Feedback Analyzer</h1>
 
-This is a full-stack Next.js web application built to analyze supervisor feedback transcripts about DeepThought Fellows using an LLM (Groq Cloud API). It transforms manual qualitative assessments into structured outputs aligned with the DeepThought Rubric and KPIs.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=AI-Powered+Feedback+Analysis;Built+with+Next.js+and+LLMs;Transforming+Qualitative+Insights+into+Structured+Evaluation&center=true&width=700&height=45">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-FullStack-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Groq-LLM_API-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/AI-Powered-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Internship-Assignment-green?style=for-the-badge">
+</p>
+
+---
+
+## 📌 About the Project
+
+The **Trinethra Module – Supervisor Feedback Analyzer** is a full-stack AI-powered web application developed as part of the **DeepThought Software Developer Internship Assignment**.
+
+This application analyzes supervisor feedback transcripts related to **DeepThought Fellows** using Large Language Models through the **Groq Cloud API**. The system transforms unstructured qualitative assessments into structured evaluations aligned with the **DeepThought Rubric** and key performance indicators (KPIs).
+
+The goal of the platform is to automate feedback interpretation, improve consistency in evaluation, and provide meaningful insights from supervisor conversations in a scalable and efficient way.
+
+---
 
 ## Setup Instructions
 
