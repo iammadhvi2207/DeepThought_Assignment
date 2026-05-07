@@ -2,16 +2,21 @@
 
 ## To-Do
 - [x] Receive user approval on implementation plan.
-- [ ] Initialize Next.js project.
-- [ ] Configure Tailwind CSS.
-- [ ] Integrate Groq Cloud API for backend processing.
-- [ ] Develop the frontend interface.
-- [ ] Test with sample transcripts.
+- [x] Initialize Next.js project.
+- [x] Configure Tailwind CSS.
+- [x] Integrate Groq Cloud API for backend processing.
+- [x] Develop the frontend interface.
+- [x] Test with sample transcripts.
 
 ## In Progress
-- [x] Analyzed assignment requirements and `context.md`, `rubric.json`, `sample-transcripts.json`.
-- [x] Created implementation plan artifact.
-- [ ] Initializing Next.js project.
+- [ ] Ready for user review.
 
 ## Completed
-- Initial planning phase.
+- [x] Initial planning phase.
+- [x] Received user approval on implementation plan.
+- [x] Initialized Next.js project.
+- [x] Configured Tailwind CSS.
+- [x] Integrated Groq Cloud API for backend processing.
+- [x] Developed the frontend interface.
+- [x] Tested with sample transcripts.
+- [x] Wrote README and created walkthrough.
