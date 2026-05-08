@@ -53,8 +53,8 @@ The goal of the platform is to automate feedback interpretation, improve consist
 
 ## LLM Model Used
 
-**Model: `llama3-70b-8192` (via Groq Cloud API)**
-*Why:* LLaMA 3 70B is an incredibly powerful open-weight model that rivals proprietary models in instruction following and reasoning. Groq's LPU architecture provides extremely fast inference. I chose this model because it handles complex system prompts and strictly adheres to structured JSON schema output, which is crucial for reliably extracting evidence, mapping KPIs, and scoring based on the rubric without formatting errors.
+**Model: `llama-3.3-70b-versatile` (via Groq Cloud API)**
+*Why:* LLaMA 3.3 70B is an incredibly powerful open-weight model that rivals proprietary models in instruction following and reasoning. Groq's LPU architecture provides extremely fast inference. I chose this model because it handles complex system prompts and strictly adheres to structured JSON schema output, which is crucial for reliably extracting evidence, mapping KPIs, and scoring based on the rubric without formatting errors.
 
 ## Architecture Overview
 
