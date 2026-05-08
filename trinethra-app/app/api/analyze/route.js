@@ -84,7 +84,7 @@ Pay special attention to the Critical Boundary (6 vs 7). 6 is executing tasks de
         { role: 'system', content: systemPrompt },
         { role: 'user', content: `Here is the transcript to analyze:\n\n${transcript}` }
       ],
-      model: 'llama3-70b-8192', // Fast, very capable of structured JSON output
+      model: 'llama-3.3-70b-versatile', // Fast, very capable of structured JSON output
       temperature: 0.1,
       response_format: { type: 'json_object' }
     });
