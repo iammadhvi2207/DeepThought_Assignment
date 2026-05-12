@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { AlertCircle, CheckCircle2, KeyRound, Play, FileText } from "lucide-react";
+import { AlertCircle, CheckCircle2, Play, FileText } from "lucide-react";
 
 export default function Home() {
   const [transcript, setTranscript] = useState("");
-  const [apiKey, setApiKey] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState(null);
@@ -33,7 +32,7 @@ export default function Home() {
       const res = await fetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ transcript, apiKey }),
+        body: JSON.stringify({ transcript }),
       });
       
       const data = await res.json();
@@ -62,16 +61,6 @@ export default function Home() {
               <h1 className="text-xl font-bold tracking-tight">Trinethra</h1>
               <p className="text-indigo-300 text-xs uppercase tracking-wider font-semibold">Supervisor Feedback Analyzer</p>
             </div>
-          </div>
-          <div className="flex items-center bg-indigo-800 rounded-full px-4 py-1.5 border border-indigo-700 w-full md:w-auto">
-            <KeyRound size={14} className="text-indigo-300 mr-2 flex-shrink-0" />
-            <input 
-              type="password" 
-              placeholder="Groq API Key" 
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              className="bg-transparent text-sm text-white placeholder-indigo-400 outline-none w-full md:w-64"
-            />
           </div>
         </div>
       </header>

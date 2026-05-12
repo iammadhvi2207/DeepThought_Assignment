@@ -5,21 +5,13 @@ import path from 'path';
 
 export async function POST(req) {
   try {
-    const { transcript, apiKey } = await req.json();
+    const { transcript } = await req.json();
 
     if (!transcript) {
       return NextResponse.json({ error: 'Transcript is required' }, { status: 400 });
     }
 
-    const keyToUse = apiKey || process.env.GROQ_API_KEY;
-    if (!keyToUse) {
-      return NextResponse.json(
-        { error: 'Groq API Key is missing. Please provide it in the UI or set GROQ_API_KEY.' },
-        { status: 401 }
-      );
-    }
-
-    const groq = new Groq({ apiKey: keyToUse });
+    const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
     // Read rubric and KPIs from data folder
     const dataDir = path.join(process.cwd(), 'data');
