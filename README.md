@@ -38,16 +38,21 @@ The goal of the platform is to automate feedback interpretation, improve consist
    npm install
    ```
 
-3. **Start the development server**:
+3. **Set up Environment Variables**:
+   Create a `.env.local` file in the `trinethra-app` directory and add your Groq API Key:
+   ```env
+   GROQ_API_KEY=your_groq_api_key_here
+   ```
+
+4. **Start the development server**:
    ```bash
    npm run dev
    ```
 
-4. **Access the application**:
+5. **Access the application**:
    Open `http://localhost:3000` in your web browser.
 
-5. **Run an Analysis**:
-   - Paste your Groq API Key into the "Groq API Key" input field in the top right of the navigation bar.
+6. **Run an Analysis**:
    - Click one of the "Sample" buttons above the text area to load a transcript or paste your own.
    - Click "Run Analysis" to get the structured evaluation.
 
@@ -59,8 +64,8 @@ The goal of the platform is to automate feedback interpretation, improve consist
 ## Architecture Overview
 
 This project is built using **Next.js (App Router)** and **Tailwind CSS**.
-- **Frontend (`app/page.js`)**: A responsive React interface that allows users to input the transcript and provide their Groq API Key securely. It has a stateful architecture managing the loading states and the presentation of the complex structured data.
-- **Backend API (`app/api/analyze/route.js`)**: A secure serverless route that receives the transcript and API Key, dynamically loads the `rubric.json` context, constructs a robust system prompt, and calls the Groq API. It enforces JSON mode and returns the structured data back to the frontend.
+- **Frontend (`app/page.js`)**: A responsive React interface that allows users to input the transcript. It has a stateful architecture managing the loading states and the presentation of the complex structured data.
+- **Backend API (`app/api/analyze/route.js`)**: A secure serverless route that receives the transcript, reads the securely stored API Key from environment variables, dynamically loads the `rubric.json` context, constructs a robust system prompt, and calls the Groq API. It enforces JSON mode and returns the structured data back to the frontend.
 
 ## Design Challenges Tackled
 
